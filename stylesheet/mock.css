@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  background-color: #f9cce3;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+
+.end {
+  margin-left: 2%;
+  margin-top: 34%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+}
+
+.heart1 {
+  margin-left: 2%;
+  margin-top: 2%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+  animation: blinker 0.3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.heart1:hover {
+  transform: scale(1.1);  
+}
+
+.heart2 {
+  margin-left: 13%;
+  margin-top: 2%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart2:hover {
+  transform: scale(1.1);  
+}
+
+.heart3 {
+  margin-left: 87%;
+  margin-top: 2%;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart3:hover {
+  transform: scale(1.1);  
+}
+
+.mag {
+  left: 5%;
+  position: absolute;
+  z-index: -1; 
+  animation: swing 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+.magt {
+  top: 230%;
+  left: 1%;
+  position: absolute; 
+}
+
+.note {
+  top: 390%;
+  left: 5%;
+  position: absolute;
+  z-index: -1; 
+  animation: swing 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+.tee {
+  top: 480%;
+  left: 5%;
+  position: absolute;
+  z-index: -1; 
+  animation: swing 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+.cap {
+  top: 700%;
+  left: -5%;
+  position: absolute;
+  z-index: -1; 
+  animation: swing 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  transform: rotate(-7deg);
+}
+
+.fact {
+  top: 830%;
+  left: 45%;
+  position: absolute;
+  z-index: 1;    
+}
+
+.tie {
+  top: 920%;
+  left: -5%;
+  position: absolute;
+  z-index: -1; 
+  animation: swing 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  transform: rotate(-7deg);
+}

@@ -1,0 +1,178 @@
+.body {
+ 
+  background-color: #fff000;
+}
+.grad {
+  margin-left: 1%;
+  margin-top: 29%;
+  text-decoration: none;
+  position: fixed;
+  display: flex;
+  z-index: 10;
+  width: 200%; 
+  overflow: hidden;
+  animation: loop-image 5s linear infinite; /* Ускорил для теста, потом вернул как было */
+}
+
+.grad img {
+  width: 50%; 
+  display: block;
+}
+
+@keyframes loop-image {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-24%); 
+  }
+
+}
+.heart1 {
+  margin-left: 2%;
+  margin-top: 2.5%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart1:hover {
+  transform: scale(1.1);  
+}
+
+.heart2 {
+  margin-left: 48%;
+  margin-top: 2.5%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart2:hover {
+  transform: scale(1.1);  
+}
+
+.heart3 {
+  margin-left: 88%;
+  margin-top: 2.5%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+  animation: blinker 0.3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.heart3:hover {
+  transform: scale(1.1);  
+}
+
+
+/* копирование и изменение номеров */
+
+.poster1 {
+  left: 15%;
+  top: 28%;
+  position: absolute;  
+  transition: transform 0.2s ease-in-out;   
+}
+.poster1:hover {
+ transform: scale(1.1) rotate(3deg);
+ z-index: 10;
+}
+
+.poster2 {
+  left: 15%;
+  top: 118%;
+  position: absolute;  
+  transition: transform 0.2s ease-in-out;   
+}
+.poster2:hover {
+ transform: scale(1.1) rotate(6deg);  
+ z-index: 10;
+}
+.poster3 {
+  left: 15%;
+  top: 208%;
+  position: absolute; 
+  transition: transform 0.2s ease-in-out;    
+}
+.poster3:hover {
+ transform: scale(1.1) rotate(-3deg);  
+ z-index: 10;
+}
+
+.poster4 {
+  left: 15%;
+  top: 298%;
+  position: absolute; 
+  transition: transform 0.2s ease-in-out;    
+}
+.poster4:hover {
+ transform: scale(1.1) rotate(4deg);  
+ z-index: 10;
+}
+
+.poster5 {
+  left: 15%;
+  top: 388%;
+  position: absolute; 
+  transition: transform 0.2s ease-in-out;    
+}
+.poster5:hover {
+ transform: scale(1.1) rotate(-7deg);  
+ z-index: 10;
+}
+.poster6 {
+  left: 15%;
+  top: 478%;
+  position: absolute; 
+  transition: transform 0.2s ease-in-out;    
+}
+.poster6:hover {
+ transform: scale(1.1) rotate(-5deg);  
+ z-index: 10;
+}
+.poster7 {
+  left: 15%;
+  top: 568%;
+  position: absolute; 
+  transition: transform 0.2s ease-in-out;    
+}
+.poster7:hover {
+ transform: scale(1.1) rotate(7deg); 
+ z-index: 10; 
+}
+.poster8 {
+  left: 15%;
+  top: 658%;
+  position: absolute; 
+  transition: transform 0.2s ease-in-out;    
+}
+.poster8:hover {
+ transform: scale(1.1) rotate(8deg);  
+ z-index: 10;
+}
+.poster9 {
+  left: 15%;
+  top: 748%;
+  position: absolute; 
+  transition: transform 0.2s ease-in-out;    
+}
+.poster9:hover {
+ transform: scale(1.1) rotate(-7deg);  
+ z-index: 10;
+}
+
+.foot {
+  left: -1%;
+  top: 55%;
+  position: fixed;     
+}

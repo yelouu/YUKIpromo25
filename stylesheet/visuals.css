@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  background-color: #f9cce3;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.container {
+  position: relative; 
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.grad {
+  margin-left: 1%;
+  margin-top: 15.5%;
+  text-decoration: none;
+  position: fixed;
+  display: flex;
+  width: 200%; 
+  overflow: hidden;
+  animation: loop-image 5s linear infinite; /* я разобрался как сделать бесконечную бегущую строку T-T */
+  z-index: 11;
+}
+
+.grad img {
+  width: 50%; 
+  display: block;
+}
+
+@keyframes loop-image {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-24%); /* Сдвигаем на точное значение */
+  }
+}
+.heart1 {
+  margin-left: 2%;
+  margin-top: -11%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+  animation: blinker 0.3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.heart1:hover {
+  transform: scale(1.1);  
+}
+
+.heart2 {
+  margin-left: 13%;
+  margin-top: -11%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart2:hover {
+  transform: scale(1.1);  
+}
+
+.heart3 {
+  margin-left: 88%;
+  margin-top: -11%;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart3:hover {
+  transform: scale(1.1);  
+}
+
+.cars img {
+  margin: 8% auto;   
+  margin-left: 2%;
+  margin-top: 14%;
+  height: auto;       
+  display: block;      
+  max-width: 90%;
+}
+
+.yuki1 {
+  position: absolute; 
+  top: 438%;     
+  left: 6%;     
+  width: 100px;  
+  z-index: 10; 
+   animation: swing 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-7deg);
+  }
+}
+
+/*Он тоже часть лайн-апа логосов, но на нем просто не написано yuki, поэтмоу он без номера*/
+
+.death {
+  position: absolute; 
+  top: 445%;     
+  left: 11%;     
+  width: 100px;  
+  z-index: 10; 
+   animation: swing2 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+@keyframes swing2 {
+  0% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-9deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+.yuki2 {
+  position: absolute; 
+  top: 420%;     
+  left: 40%;     
+  width: 100px;  
+  z-index: 10; 
+  animation: swing2 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-9deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+/*Последний из трех логосов*/
+
+.yuki3 {
+  position: absolute; 
+  top: 461%;     
+  left: 60%;     
+  width: 100px;  
+  z-index: 10; 
+   animation: swing2 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+@keyframes swing2 {
+  0% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-9deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+.texts {
+  position: absolute; 
+  top: 520%;     
+  left: 2%;     
+  width: 100px;    
+}
+
+.cross {
+  position: absolute; 
+  top: 540%;     
+  left: 2%;     
+}
+
+.texts2 {
+  position: absolute; 
+  top: 700%;     
+  left: 2%;     
+  width: 100px;    
+}
+
+.letter {
+  position: absolute; 
+  top: 740%;     
+  left: 23%;   
+  animation: swing 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;  
+}
+
+/*Это все тот же логос yuki3, но уже второй раз, поэтому я не смог придумать ничего оригинальнее
+кроме как назвать его 33.*/
+
+.yuki33 {
+  position: absolute; 
+  top: 790%;     
+  left: 60%;     
+  width: 100px;  
+  transition: transform 0.2s ease-in-out, opacity 1s ease-in-out; 
+}
+
+.yuki33:hover {
+  transform: scale(1.1) rotate(-5deg);  
+}
+
+.footer2 {
+  position: absolute; 
+  top: 820%;     
+  left: 0%;     
+  width: 100px;  
+}
+
+
+
+
+
+
+
+
+

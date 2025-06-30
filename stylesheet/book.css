@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  background-color: #fddced;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.container {
+  position: relative; 
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px;
+}
+.grad {
+  margin-left: 1%;
+  margin-top: 28%;
+  text-decoration: none;
+  position: fixed;
+  display: flex;
+  width: 200%; 
+  overflow: hidden;
+  animation: loop-image 5s linear infinite;
+  z-index: 11;
+}
+
+.grad img {
+  width: 50%; /* Каждое изображение занимает половину ширины контейнера */
+  display: block;
+}
+
+@keyframes loop-image {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-24%); /* Сдвигаем на точное значение */
+  }
+}
+
+.texts3 {
+  margin-left: 4%;
+  margin-top: 12%;
+  text-decoration: none;
+  color: black;
+  position:absolute;
+  transition: transform 0.2s ease-in-out;
+}
+
+.texts4 {
+  margin-left: 25%;
+  margin-top: 2%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+  animation: swing 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+.all {
+  margin-left: 2%;
+  margin-top: 30%;
+  text-decoration: none;
+  color: black;
+  position:absolute;
+}
+
+.nums {
+  margin-left: 4%;
+  margin-top: 28.5%;
+  text-decoration: none;
+  color: black;
+  position:absolute;
+  animation: swing2 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+@keyframes swing2 {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+
+.heart1 {
+  margin-left: 2%;
+  margin-top: 2%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart1:hover {
+  transform: scale(1.1);  
+}
+
+.heart2 {
+  margin-left: 13%;
+  margin-top: 2%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+  animation: blinker 0.3s linear infinite;
+  z-index: 10; 
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.heart2:hover {
+  transform: scale(1.1);  
+}
+
+.heart3 {
+  margin-left: 87%;
+  margin-top: 2%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart3:hover {
+  transform: scale(1.1);  
+}
+
+.image-stack {
+  position: relative; 
+  width: 1000px;        
+  height: 400px;      
+  margin: 20px auto;    
+}
+
+.stacked-image {
+  position: absolute; 
+  top: 42%;
+  left: 3%;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;   
+  transition: transform 0.5s ease-in-out, opacity 1s ease-in-out; 
+  cursor: pointer;     
+}
+
+.stacked-image:hover{
+  transform: scale(1.05) rotate(-5deg);  
+}
+
+.stacked-image.top {
+  z-index: 1;       
+}
+
+.stacked-image.falling {
+  transform: translateY(100%) rotate(5deg); 
+  opacity: 0;         
+}

@@ -1,0 +1,223 @@
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #fff000, white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header__btn{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Кнопки */
+.btn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-70px) scale(1.05);
+}
+
+.heart1 {
+  margin-left: -88%;
+  margin-top: 3%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart1:hover {
+  transform: scale(1.1);  
+}
+
+.heart2 {
+  margin-left: 10%;
+  margin-top: 3%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart2:hover {
+  transform: scale(1.1);  
+}
+
+.heart3 {
+  margin-left: 88%;
+  margin-top: 3%;
+  text-decoration: none;
+  color: black;
+  position:fixed;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart3:hover {
+  transform: scale(1.1);  
+}
+
+.sign {
+  transition: transform 0.3s ease-in-out;
+  margin-left: -38%;
+  margin-top: 15%;
+}
+.sign:hover {
+  transform: scale(1.05);
+  transform: translateY(-150px) scale(1.05);
+}
+
+.sign2 {
+ margin-left: -43%;
+ margin-bottom: 5%;   
+}
+
+
+
+/* Разделитель */
+.divider {
+  background: black;
+  height: 300px;
+  width: 100%;
+  margin: 0px;
+  margin-top: 0%;
+}
+
+/* Подвал */
+.footer {
+  font-size: 12px;
+  padding: 0px;
+  padding-top:0px;
+  max-width: 800px;
+  color: #333;
+}
+.container {
+  position: relative; 
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px;
+}
+.grad {
+  margin-left: 1%;
+  margin-top: 29.3%;
+  text-decoration: none;
+  position: fixed;
+  display: flex;
+  width: 200%; /* Ширина контейнера равна удвоенной ширине изображения */
+  overflow: hidden;
+  animation: loop-image 5s linear infinite; /* Ускорим для теста, потом вернем как было */
+}
+
+.grad img {
+  width: 50%; /* Каждое изображение занимает половину ширины контейнера */
+  display: block;
+}
+
+@keyframes loop-image {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-24%); /* Сдвигаем на точное значение */
+  }
+}
+
+.floating-image {
+  position: absolute; 
+  top: 1640px;     
+  left: 6%;     
+  width: 430px;  
+  z-index: 10; 
+   animation: swing 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-7deg);
+  }
+}
+
+.logo {
+
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+
+.funnel {
+  margin-left: 54%;
+  margin-top: 222.4%;
+  margin-bottom: 0px;  
+  position: absolute;
+}
+.transparent-input {
+  background-color: transparent; 
+  border: 1px solid black; 
+  border-radius: 10px; 
+  padding: 10px; 
+  font-size: 16px; 
+  color: black; 
+  outline: none; 
+  width: 300px; 
+  box-sizing: border-box;
+  position: relative;
+  top: -432px;
+  left: 8%;
+  transform: rotate(-2deg);
+}
+#myText {
+  padding-bottom: 100%;
+  margin-top: -29%;
+  margin-left: 65%;
+  width: 27%; 
+  display: none;
+  text-align: left;
+  transform: rotate(-2deg);
+}
+#myText2 {
+  padding-bottom: 100%;
+  margin-top: -29%; 
+  margin-left: 65%; 
+  width: 27%; 
+  display: none;
+  text-align: left;
+  transform: rotate(-2deg);
+}
+#myText3 {
+    padding-bottom: 100%;
+    margin-top: -29%; 
+    margin-left: 65%; 
+    width: 27%; 
+    display: none;
+    text-align: left;
+    transform: rotate(-2deg);
+}
+
+
+
+.transparent-input::placeholder {
+  color: rgba(0, 0, 0, 0.5); 
+}
